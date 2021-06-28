@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(91,55, 183, 1);
+    font-family: "Lato",sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    transition: background 0.4s linear;
+}
+h1{
+    color: rgb(226,226, 226);
+    position: absolute;
+    top: 20px;
+}
+.tab-nav-container{
+    background-color: rgb(226, 226, 226);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow:0 15px 10px rgba(0,0, 0, 0.16),
+    0 3px 6px rgba(0,0, 0, 0.16);
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    width: 350px;
+}
+.tab{
+    background-color: rgb(226, 226, 226);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    margin: 0 5px;
+    transition: background 0.4s linear;
+}
+.tab i{
+    font-size: 1.2em;
+}
+.tab p{
+    font-weight: bold;
+    overflow: hidden;
+    max-width: 0;
+}
+.tab.active p{
+    margin-left: 10px;
+    max-width: 100px;
+    transition: max-width 0.4s linear;
+}
+.tab.active.purple{
+    background-color: rgba(91,55, 183, 0.2);
+    color: rgba(91,55, 183, 1);
+}
+.tab.active.pink{
+    background-color: rgba(201,55, 157, 0.2);
+    color: rgba(201,55, 157, 1);
+}
+.tab.active.yellow{
+    background-color: rgba(230,169, 25, 0.2);
+    color: rgba(230,169, 25, 1);
+}
+.tab.active.teal{
+    background-color: rgba(28,150,162,0.2);
+    color: rgba(28,150,162,1);
+}
